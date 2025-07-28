@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serena – Ruhe & Stil im Homeoffice</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #FBFAF9;
+      color: #2C2C2C;
+    }
+    header, footer {
+      background: #F4EDEB;
+      padding: 1.5rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #BCCFC3;
+      font-weight: 500;
+    }
+    .hero {
+      background-color: #BCCFC3;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2rem;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+    .cta-button {
+      padding: 0.8rem 1.5rem;
+      background-color: #2C2C2C;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: 500;
+      border-radius: 6px;
+    }
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+    }
+    .category-card {
+      background: #FFFFFF;
+      border: 1px solid #E7D9CE;
+      padding: 1.5rem;
+      text-align: center;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background 0.2s ease-in-out;
+      color: inherit;
+      text-decoration: none;
+    }
+    .category-card:hover {
+      background: #F4EDEB;
+    }
+    footer {
+      flex-direction: column;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #BCCFC3;
+      text-decoration: none;
+      margin: 0 0.3rem;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      header, footer {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">SERENA</div>
+    <nav>
+      <a href="produkte.html">Produkte</a>
+      <a href="kollektion.html">Kollektion</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Schaffe deinen Raum für Ruhe, Fokus und Stil.</h1>
+    <p>Stilvolle Homeoffice-Produkte für ein harmonisches Arbeitsumfeld.</p>
+    <a href="produkte.html"><button class="cta-button">Jetzt entdecken</button></a>
+  </section>
+
+  <section class="section categories">
+    <a href="produkte.html#ergonomie" class="category-card">
+      <h3>Ergonomische Essentials</h3>
+      <p>Laptop-Ständer, Mousepads & mehr</p>
+    </a>
+    <a href="produkte.html#ordnung" class="category-card">
+      <h3>Ordnung & Stil</h3>
+      <p>Organizer, Kabelmanagement, Ablagen</p>
+    </a>
+    <a href="produkte.html#licht" class="category-card">
+      <h3>Licht & Atmosphäre</h3>
+      <p>Schreibtischlampen & Serena-Vibes</p>
+    </a>
+    <a href="produkte.html#picks" class="category-card">
+      <h3>Serena Picks</h3>
+      <p>Unsere kuratierte Auswahl</p>
+    </a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Serena. Alle Rechte vorbehalten.</p>
+    <p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a> | <a href="agb.html">AGB</a></p>
+  </footer>
+
+</body>
+</html>
