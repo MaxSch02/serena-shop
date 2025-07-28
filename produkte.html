@@ -2,28 +2,162 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unsere Produkte</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alle Produkte – Serena</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #FBFAF9;
+      color: #2C2C2C;
+    }
+    header, footer {
+      background: #F4EDEB;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #BCCFC3;
+      margin-left: 1rem;
+      font-weight: 500;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .product-section {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .category-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #4D6656;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+    }
+    .product-card {
+      background: #FFFFFF;
+      border: 1px solid #E7D9CE;
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 0.8rem;
+    }
+    .product-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+    }
+    .product-card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .product-card strong {
+      display: block;
+      margin-top: 0.5rem;
+      color: #2C2C2C;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 2rem;
+    }
+    footer a {
+      color: #BCCFC3;
+      text-decoration: none;
+      margin: 0 0.3rem;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Startseite</a>
-            <a href="produkte.html">Produkte</a>
-            <a href="kollektion.html">Kollektion</a>
-            <a href="ueber-uns.html">Über uns</a>
-            <a href="blog.html">Blog</a>
-            <a href="impressum.html">Impressum</a>
-        </nav>
-    </header>
-    <main>
-        <h1>Unsere Produkte</h1>
-        <p>Hier findest du alle Produkte für dein ruhiges Homeoffice.</p>
-    </main>
-    <footer>
-        <p>&copy; 2025 Serena</p>
-    </footer>
+  <header>
+    <div class="logo">SERENA</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="kollektion.html">Kollektion</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+  </header>
+
+  <h1>Unsere gesamte Produktauswahl</h1>
+
+  <section class="product-section">
+    <div class="category-title">Ergonomische Essentials</div>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="assets/laptop-stand.jpg" alt="Laptop-Ständer">
+        <h3>Laptop-Ständer „Claro”</h3>
+        <p>Ergonomisch & klappbar</p>
+        <strong>€39,00</strong>
+      </div>
+      <div class="product-card">
+        <img src="assets/holz-tastatur.jpg" alt="Tastatur">
+        <h3>Tastatur „NatureType”</h3>
+        <p>Mit Holzverkleidung</p>
+        <strong>€69,00</strong>
+      </div>
+    </div>
+
+    <div class="category-title">Ordnung & Stil</div>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="assets/kabelorganizer.jpg" alt="Kabel-Organizer">
+        <h3>Kabel-Organizer „Línea”</h3>
+        <p>Filz & Leder</p>
+        <strong>€19,00</strong>
+      </div>
+      <div class="product-card">
+        <img src="assets/stifthalter.jpg" alt="Stifthalter">
+        <h3>Stifthalter „Organico”</h3>
+        <p>Aus Eichenholz</p>
+        <strong>€22,00</strong>
+      </div>
+    </div>
+
+    <div class="category-title">Licht & Atmosphäre</div>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="assets/lampe.jpg" alt="Lampe">
+        <h3>Lampe „Luz Serena”</h3>
+        <p>Dimmbare LED</p>
+        <strong>€59,00</strong>
+      </div>
+      <div class="product-card">
+        <img src="assets/magsafe.jpg" alt="Ladestation">
+        <h3>Ladestation „Flow”</h3>
+        <p>3-in-1 Wireless</p>
+        <strong>€49,00</strong>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Serena. Alle Rechte vorbehalten.</p>
+    <p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a> | <a href="agb.html">AGB</a></p>
+  </footer>
 </body>
 </html>
