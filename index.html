@@ -2,22 +2,29 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+  <!-- Zeichencodierung und grundlegende Einstellungen -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Titel der Seite -->
   <title>Serena – Natürliches Homeoffice</title>
+
+  <!-- Google Fonts: Playfair Display (Überschriften) und Inter (Fließtext) -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Interne CSS-Styles -->
   <style>
     * {
-      box-sizing: border-box;
+      box-sizing: border-box; /* Einheitliches Box-Modell */
     }
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Inter', sans-serif; /* Standardschrift */
       margin: 0;
-      background-color: #FBFAF9;
-      color: #2C2C2C;
+      background-color: #FBFAF9; /* Hintergrundfarbe */
+      color: #2C2C2C; /* Textfarbe */
     }
     header {
-      background-color: #F4EDEB;
+      background-color: #F4EDEB; /* Header-Hintergrund */
       padding: 1.5rem 2rem;
       display: flex;
       justify-content: space-between;
@@ -36,7 +43,7 @@
       font-weight: 600;
     }
     nav a:hover {
-      color: #5F8575;
+      color: #5F8575; /* Hover-Farbe der Navigation */
     }
     .hero {
       display: flex;
@@ -45,10 +52,10 @@
       align-items: center;
       text-align: center;
       padding: 4rem 1rem;
-      background: linear-gradient(rgba(188, 207, 195, 0.6), rgba(188, 207, 195, 0.6)), url('host_product.avif');
+      background: linear-gradient(rgba(188, 207, 195, 0.6), rgba(188, 207, 195, 0.6)), url('host_product.avif'); /* Hintergrundbild mit Overlay */
       background-size: cover;
       background-position: center;
-      color: #FAF9F6;
+      color: #FAF9F6; /* Textfarbe im Hero */
     }
     .hero h2 {
       font-size: 2.5rem;
@@ -73,7 +80,7 @@
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       padding: 3rem 2rem;
       gap: 2rem;
-      background-color: #E4F0E7;
+      background-color: #E4F0E7; /* Hintergrund der Feature-Sektion */
     }
     .feature {
       background: #FFFFFF;
@@ -83,7 +90,26 @@
       border: 1px solid #BCCFC3;
     }
     .feature h3 {
-      color: #5F8575;
+      color: #5F8575; /* Titel-Farbe der Features */
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      background-color: #FBFAF9;
+    }
+    .product-card {
+      background: white;
+      padding: 1rem;
+      border: 1px solid #E7D9CE;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
     }
     footer {
       background-color: #F4EDEB;
@@ -107,67 +133,10 @@
         font-size: 1rem;
       }
     }
-    <section class="section">
-  <h2 style="text-align: center; font-family: 'Playfair Display', serif;">Unsere beliebtesten Produkte</h2>
-
-  <div class="product-grid">
-    <!-- Produkt 1 -->
-    <div class="product-card">
-      <img src="assets/laptop-stand.jpg" alt="Ergonomischer Laptop-Ständer">
-      <h3>Laptop-Ständer „Claro”</h3>
-      <p>Hochwertiger Bambus, ergonomisch & klappbar</p>
-      <strong>€39,00</strong>
-    </div>
-
-    <!-- Produkt 2 -->
-    <div class="product-card">
-      <img src="assets/holz-tastatur.jpg" alt="Tastatur mit Holzrahmen">
-      <h3>Tastatur „NatureType”</h3>
-      <p>Mechanisch, geräuscharm, Holzverkleidung</p>
-      <strong>€69,00</strong>
-    </div>
-
-    <!-- Produkt 3 -->
-    <div class="product-card">
-      <img src="assets/kabelorganizer.jpg" alt="Organizer aus Filz">
-      <h3>Kabel-Organizer „Línea”</h3>
-      <p>Filz & Leder, nachhaltig & kompakt</p>
-      <strong>€19,00</strong>
-    </div>
-
-    <!-- Produkt 4 -->
-    <div class="product-card">
-      <img src="assets/stifthalter.jpg" alt="Stifthalter">
-      <h3>Stifthalter „Organico”</h3>
-      <p>Handgefertigt aus Eichenholz</p>
-      <strong>€22,00</strong>
-    </div>
-
-    <!-- Produkt 5 -->
-    <div class="product-card">
-      <img src="assets/lampe.jpg" alt="Schreibtischlampe">
-      <h3>Lampe „Luz Serena”</h3>
-      <p>Dimmbare LED mit natürlichem Holzfuß</p>
-      <strong>€59,00</strong>
-    </div>
-
-    <!-- Produkt 6 -->
-    <div class="product-card">
-      <img src="assets/magsafe.jpg" alt="Ladestation">
-      <h3>Ladestation „Flow”</h3>
-      <p>3-in-1 Wireless mit MagSafe & USB-C</p>
-      <strong>€49,00</strong>
-    </div>
-  </div>
-
-  <div style="text-align: center; margin-top: 2rem;">
-    <a href="produkte.html"><button class="cta-button">Alle Produkte entdecken</button></a>
-  </div>
-</section>
-
   </style>
 </head>
 <body>
+  <!-- HEADER-BEREICH -->
   <header>
     <h1>SERENA</h1>
     <nav>
@@ -178,12 +147,14 @@
     </nav>
   </header>
 
+  <!-- HERO-BEREICH -->
   <section class="hero">
     <h2>Natürliches Design für dein Homeoffice</h2>
     <p>Nachhaltige Accessoires, ruhige Farben und ergonomische Lösungen für mehr Gelassenheit am Arbeitsplatz.</p>
     <a href="produkte.html" class="btn">Jetzt entdecken</a>
   </section>
 
+  <!-- FEATURES-BEREICH -->
   <section class="features">
     <div class="feature">
       <h3>Nachhaltige Materialien</h3>
@@ -199,8 +170,60 @@
     </div>
   </section>
 
+  <!-- PRODUKT-BEREICH -->
+  <section class="section">
+    <h2 style="text-align: center; font-family: 'Playfair Display', serif;">Unsere beliebtesten Produkte</h2>
+    <div class="product-grid">
+      <!-- Produktkarten -->
+      <div class="product-card">
+        <img src="assets/laptop-stand.jpg" alt="Ergonomischer Laptop-Ständer">
+        <h3>Laptop-Ständer „Claro”</h3>
+        <p>Hochwertiger Bambus, ergonomisch & klappbar</p>
+        <strong>€39,00</strong>
+      </div>
+      <div class="product-card">
+        <img src="assets/holz-tastatur.jpg" alt="Tastatur mit Holzrahmen">
+        <h3>Tastatur „NatureType”</h3>
+        <p>Mechanisch, geräuscharm, Holzverkleidung</p>
+        <strong>€69,00</strong>
+      </div>
+      <div class="product-card">
+        <img src="assets/kabelorganizer.jpg" alt="Organizer aus Filz">
+        <h3>Kabel-Organizer „Línea”</h3>
+        <p>Filz & Leder, nachhaltig & kompakt</p>
+        <strong>€19,00</strong>
+      </div>
+      <div class="product-card">
+        <img src="assets/stifthalter.jpg" alt="Stifthalter">
+        <h3>Stifthalter „Organico”</h3>
+        <p>Handgefertigt aus Eichenholz</p>
+        <strong>€22,00</strong>
+      </div>
+      <div class="product-card">
+        <img src="assets/lampe.jpg" alt="Schreibtischlampe">
+        <h3>Lampe „Luz Serena”</h3>
+        <p>Dimmbare LED mit natürlichem Holzfuß</p>
+        <strong>€59,00</strong>
+      </div>
+      <div class="product-card">
+        <img src="assets/magsafe.jpg" alt="Ladestation">
+        <h3>Ladestation „Flow”</h3>
+        <p>3-in-1 Wireless mit MagSafe & USB-C</p>
+        <strong>€49,00</strong>
+      </div>
+    </div>
+
+    <!-- Button zu allen Produkten -->
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="produkte.html"><button class="cta-button">Alle Produkte entdecken</button></a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    &copy; 2025 Serena – Natürliches Homeoffice | <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>
+    &copy; 2025 Serena – Natürliches Homeoffice | 
+    <a href="impressum.html">Impressum</a> · 
+    <a href="datenschutz.html">Datenschutz</a>
   </footer>
 </body>
 </html>
