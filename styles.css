@@ -1,0 +1,139 @@
+/* ========== GLOBAL STYLES ========== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #FBFAF9;
+  color: #2C2C2C;
+  line-height: 1.6;
+}
+
+/* ========== HEADER ========== */
+header {
+  background-color: #F4EDEB;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-family: 'Playfair Display', serif;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav a {
+  margin-left: 1rem;
+  color: #2C2C2C;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #5F8575;
+}
+
+/* ========== PAGE TITLES ========== */
+h1.page-title {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+
+/* ========== PRODUCT SECTIONS ========== */
+.product-section {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.category-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+  color: #5F8575;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  background: #FFFFFF;
+  border: 1px solid #E7D9CE;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+}
+
+.product-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: #2C2C2C;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.product-card strong {
+  display: block;
+  margin-top: 0.5rem;
+  color: #2C2C2C;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background-color: #F4EDEB;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #5F8575;
+  text-decoration: none;
+  margin: 0 0.3rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 600px) {
+  h1.page-title {
+    font-size: 1.6rem;
+  }
+
+  .category-title {
+    font-size: 1.3rem;
+  }
+}
